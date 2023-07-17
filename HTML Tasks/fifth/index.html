@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fifth Task - TimeTable</title>
+    <style>
+        table{
+            /* margin: 0 auto; */
+            border-collapse: collapse;
+            height: 50%;
+            width: 100%;
+            background-color: yellow;
+            border-spacing: 6px; /* cell spacing */
+        }
+        th, td{
+            border: 2px solid #000;
+            padding: 5px; /* cell padding */
+            
+        }
+        .highlight{
+            background-color: red;
+        }
+        .table-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .text-center{
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="table-container">
+        <table>
+            <tr>
+                <th rowspan="2">Task</th>
+                <th colspan="7">Day of the week</th>
+            </tr>
+            <tr>
+                <td>Mon</td>
+                <td>Tue</td>
+                <td>Wed</td>
+                <td>Thu</td>
+                <td>Fri</td>
+                <td>Sat</td>
+                <td>Sun</td>
+            </tr>
+            <tr>
+                <td>College</th>
+                <td>Java</td>
+                <td>Web Design</td>
+                <td>C Lang</td>
+                <td>Python</td>
+                <td>Practical</td>
+                <td rowspan="2" colspan="2" class="highlight text-center">OFF</td>
+            </tr>
+            <tr>
+                <td>Work</th>
+                <td colspan="5" class="text-center">Subject preparation and project work</td>
+            </tr>
+        </table>
+        <caption><b>Daily Schedule</b></caption>
+    </div>
+    
+</body>
+</html>
