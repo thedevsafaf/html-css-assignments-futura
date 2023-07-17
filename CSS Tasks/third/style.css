@@ -1,0 +1,23 @@
+body{
+    background: #1b1a1a;
+}
+
+h1{
+    text-align: center;
+    color: white;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+img{
+    border: 3px solid red;
+    border-radius: 40px 70px 90px 50px;
+    opacity: 0.7;
+    margin: 10px;
+    box-shadow: 12px 16px 18px blue;
+}

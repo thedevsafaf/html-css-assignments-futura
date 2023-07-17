@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page | Zafe LLC</title>
+    <style>
+        *{
+            font-family:  Verdana, sans-serif;
+        }
+        .title-container{
+            margin-left: 350px;
+        }
+        table{
+          border-collapse: collapse;
+          margin: 0 auto;
+        }
+        label{
+            font-weight: bold;
+            margin-right: 20px;
+        }
+        hr{
+            width: 60%;
+        }
+        input,textarea, select{
+            margin: 10px;
+        }
+        #last_name{
+            margin-left: -150px;
+        }
+        #address_line1, #address_line2{
+            width: 100%;
+        }
+        #state{
+            margin-left: -150px;
+        }
+        #pincode{
+            width: 30%;
+        }
+        label[for="country"]{
+            margin-left: -150px;
+        }
+        #area_code{
+            width: 30%;
+        }
+        #phone{
+            margin-left: -150px;
+        }
+        #email{
+            width: 70%;
+        }
+        form{
+            border: 3px groove #714271 ;
+            width: 50%;
+            margin: 0 auto;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="title-container">
+        <h1>Contact Page</h1>
+        <p style="font-weight:bold;">Happy to help anytime</p>
+    </div>
+    <hr>
+    <form>
+        <table>     
+            <tr>    
+              <td><label for="full_name">Full Name:</label></td>
+              <td><input type="text" id="first_name" name="first_name" placeholder="First Name" required></td>
+              <td><input type="text" id="last_name" name="last_name" placeholder="Last Name" required> </td>  
+            </tr>    
+            <tr> 
+              <td rowspan="4"><label for="address">Address:</label></td>   
+              <td colspan="2"><input type="text" id="address_line1" name="address_line1" placeholder="Street Address" maxlength="25" required></td>      
+            </tr> 
+            <tr>
+                <td colspan="2"><input type="text" id="address_line2" name="address_line2" placeholder="Street Address Line 2"></td>  
+            </tr>
+            <tr>
+                <td><input type="text" id="city" name="city" placeholder="City"></td> 
+                <td><input type="text" id="state" name="state" placeholder="State"></td> 
+            </tr>
+            <tr>
+                <td><input type="text" id="pincode" name="pincode" placeholder="Pin Code"></td> 
+                <td>
+                    <label for="country">Country:
+                    <select id="country" name="country" required>
+                      <option value="" disabled selected>Please select</option>
+                      <option value="india">India</option>
+                    </select>
+                    </label>
+                </td>
+            </tr> 
+            <tr>
+                <td><label for="phone">Phone Number:</label></td>
+                <td><input type="text" id="area_code" name="area_code" placeholder="Area Code"></td>
+                <td><input type="tel" name="phone" id="phone" placeholder="Phone Number"></td>
+            </tr> 
+            <tr>
+                <td><label for="mobile">Mobile:</label></td>
+                <td><input type="tel" name="mobile" id="mobile" placeholder="Mobile Number" pattern="[0-9]{10}" maxlength="10" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" name="email" id="email" placeholder="ex: myname@example.com" required></td>
+            </tr>
+            <tr>
+                <td><label for="skill_level">Skill Level:</label></td>
+                <td>
+                  <select id="skill_level" name="skill_level" required>
+                    <option value="undergraduate">Undergraduate</option>
+                    <option value="graduate">Graduate</option>
+                    <option value="postgraduate">Post-graduate</option>
+                    <option value="diploma">Diploma/Technical</option>
+                  </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="cover_letter">Cover Letter:</label></td>
+                <td>
+                    <textarea rows="5" cols="40" name="cover_letter" id="cover_letter">Describe yourself in brief (max. 450 characters)</textarea>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="fileInput">Resume:</label></td>
+                <td><input type="file" id="myFile" name="filename"></td>
+            </tr>
+            <tr>
+                <td><label for="agree">Declaration:</label></td>
+                <td><input type="checkbox" name="agree" id="agree">The above information filled by me is true. <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I also accept all the
+                    terms and conditions</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Submit Form">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>  
+</body>
+</html>

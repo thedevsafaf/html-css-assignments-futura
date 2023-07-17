@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS IVth Task</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        nav {
+            padding: 24px;
+            background-color: green;
+        }
+
+        ul {
+            display: flex;
+        }
+
+        ul li {
+            margin-right: 30px;
+            list-style-type: none;
+        }
+
+        ul li a {
+            font-size: 20px;
+            text-decoration: none;
+            color: aliceblue;
+        }
+
+        ul li a:hover {
+            color: yellow;
+        }
+
+        ul li a.active {
+            color: yellow;
+        }
+
+        /* The dropdown container */
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        /* Dropdown content (hidden by default) */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: green;
+            min-width: 120px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        /* Links inside the dropdown */
+        .dropdown-content a {
+            float: none;
+            color: aliceblue;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            color: yellow;
+        }
+
+        /* Show the dropdown menu on hover */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#" class="nav-item">Home</a></li>
+            <li><a href="#" class="nav-item">About</a></li>   
+            <li>
+                <div class="dropdown">
+                    <a href="#" class="nav-item">Products</a>
+                    <div class="dropdown-content">
+                        <a href="#">Engineering</a>
+                        <a href="#">Telecom</a>
+                        <a href="#">Energy</a>
+                        <a href="#">Finance</a>
+                        <a href="#">Consultancy</a>
+                    </div>
+                </div>
+            </li>    
+            <li><a href="#" class="nav-item">Services</a></li>
+            <li><a href="#" class="nav-item">Contact</a></li>
+        </ul>
+    </nav>
+    <script>
+        var navItems = document.querySelectorAll(".nav-item");
+        for (var i = 0; i < navItems.length; i++) {
+            navItems[i].addEventListener("click", function () {
+                this.classList.add("active");
+            });
+        }
+    </script>
+</body>
+
+</html>
