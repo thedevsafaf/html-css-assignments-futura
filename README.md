@@ -1,5 +1,5 @@
 # html-css-assignments-futura
-Tasks provided by Futura for HTML and CSS 
+Task #2 - By Futura for HTML and CSS 
 
 HTML TASKS 
 
