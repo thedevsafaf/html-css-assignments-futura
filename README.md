@@ -55,7 +55,7 @@ CSS TASKS
 
 4. Navigation Bar using CSS
    
-  ![css4_1](https://github.com/thedevsafaf/html-css-assignments-futura/assets/85129653/23ec747b-1c39-4413-92e4-473e51f428ac)
+  ![css4_1](https://github.com/thedevsafaf/html-css-assignments-futura-t2/assets/85129653/b3ffa9da-1468-4a0a-a8f5-cd7ac89ae026)
 
   ![css4_2](https://github.com/thedevsafaf/html-css-assignments-futura/assets/85129653/32bd9364-a113-4c01-ad32-dc4d17084457)
 
