@@ -1,4 +1,4 @@
-# html-css-assignments-futura
+# html-css-assignments-futura-t2
 Task #2 - By Futura for HTML and CSS 
 
 HTML TASKS 
